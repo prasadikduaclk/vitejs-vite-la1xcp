@@ -6,6 +6,7 @@ import * as THREE from "https://cdn.skypack.dev/three@0.145.0"
 import vertexShader from '/vertex.glsl'
 import fragmentShader from '/fragment.glsl'
 //console.log(fragmentShader)
+//console.log(vertexShader)
 
 
 const scene = new THREE.Scene()
@@ -35,7 +36,6 @@ const sphere = new THREE.Mesh(
     uniforms:{
       globeTexture:{
         value: new TextureLoader().load('/globe.jpg')
-
       }
     }
    //map : new THREE.TextureLoader().load('globe.jpg')
